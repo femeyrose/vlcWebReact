@@ -1,0 +1,667 @@
+/* line 1, ../../../Desktop/HTMLupdate/scss/main.scss */
+body {
+  font-family: 'helvetica-r' !important;
+}
+
+@font-face {
+  font-family: 'helvetica-r';
+  src: url("../fonts/HelveticaNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'helvetica-m';
+  src: url("../fonts/HelveticaNeue-Medium.ttf");
+}
+
+/* line 15, ../../../Desktop/HTMLupdate/scss/main.scss */
+a:hover {
+  text-decoration: none !important;
+}
+
+/* line 19, ../../../Desktop/HTMLupdate/scss/main.scss */
+.rem-pad {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+@media (min-width: 576px) {
+  /* line 24, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .xsrem-pad {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+/* line 31, ../../../Desktop/HTMLupdate/scss/main.scss */
+.banner {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 38, ../../../Desktop/HTMLupdate/scss/main.scss */
+.banner h1 {
+  font-size: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-family: 'helvetica-m';
+}
+
+/* line 45, ../../../Desktop/HTMLupdate/scss/main.scss */
+.banner h4 {
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'helvetica-m';
+}
+
+/* line 53, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 53, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .tabsection {
+    display: block;
+  }
+}
+
+/* line 60, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection nav {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* line 63, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection nav .nav-item {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0;
+  color: #ffffff;
+  font-family: 'helvetica-m';
+  font-size: 17px;
+  line-height: 32px;
+  background-color: #2F75BB;
+  margin-bottom: 10px;
+}
+
+/* line 79, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection nav .nav-tabs .nav-item.show .nav-link,
+.tabsection nav .nav-tabs .nav-link.active {
+  background-color: #2F75BB;
+  background-image: url("../images/tabbg.png");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #ffffff;
+}
+
+/* line 89, ../../../Desktop/HTMLupdate/scss/main.scss */
+/* .tabsection .nav-tabs {
+  height: 100%;
+} */
+
+/* line 92, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .tab-content {
+  padding: 0px 50px;
+}
+
+/* line 94, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .tab-content h2 {
+  font-size: 25px;
+  font-family: 'helvetica-m';
+  color: #161616;
+}
+
+/* line 99, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .tab-content .bbottam {
+  border-bottom: 1px solid #cccccc;
+}
+
+/* line 102, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .tab-content h3 {
+  font-size: 22px;
+  font-family: 'helvetica-m';
+  margin-bottom: 15px;
+  color: #003E7B;
+}
+
+/* line 108, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .tab-content p {
+  color: #001D3A;
+}
+
+/* line 111, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .tab-content .solutionsbox {
+  padding-top: 18px;
+}
+
+/* line 116, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .solidtionlist ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+/* line 122, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .solidtionlist ul li {
+  list-style: none;
+  padding: 0px 15px;
+  margin: 7px 0;
+  border-left: 3px solid #161616;
+}
+
+/* line 127, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .solidtionlist ul li a {
+  font-family: 'helvetica-m';
+  color: #161616;
+}
+
+/* line 130, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .solidtionlist ul li a:hover {
+  text-decoration: none !important;
+}
+
+/* line 134, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .solidtionlist ul li:hover {
+  border-left: 3px solid #EC0157;
+}
+
+/* line 136, ../../../Desktop/HTMLupdate/scss/main.scss */
+.tabsection .solidtionlist ul li:hover a {
+  color: #EC0157;
+}
+
+/* line 145, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  /* line 145, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .acc-section {
+    display: none;
+  }
+}
+
+/* line 152, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section .card-headert {
+  background-color: #2F75BB;
+}
+
+/* line 154, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section .card-headert button {
+  width: 100%;
+  text-align: left;
+  color: #ffffff;
+  font-family: 'helvetica-m';
+  text-decoration: none !important;
+}
+
+/* line 163, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section .solidtionlist ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+/* line 169, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section .solidtionlist ul li {
+  list-style: none;
+  padding: 0px 15px;
+  margin: 7px 0;
+  border-left: 3px solid #161616;
+}
+
+/* line 174, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section .solidtionlist ul li a {
+  font-family: 'helvetica-m';
+  color: #161616;
+}
+
+/* line 177, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section .solidtionlist ul li a:hover {
+  text-decoration: none !important;
+}
+
+/* line 181, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section .solidtionlist ul li:hover {
+  border-left: 3px solid #EC0157;
+}
+
+/* line 183, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section .solidtionlist ul li:hover a {
+  color: #EC0157;
+}
+
+/* line 190, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section .bbottam {
+  border-bottom: 1px solid #cccccc;
+}
+
+/* line 193, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section h3 {
+  font-size: 20px;
+  font-family: 'helvetica-m';
+  margin-bottom: 15px;
+  color: #003E7B;
+}
+
+/* line 199, ../../../Desktop/HTMLupdate/scss/main.scss */
+.acc-section .solutionsbox {
+  padding-top: 18px;
+}
+
+/* line 204, ../../../Desktop/HTMLupdate/scss/main.scss */
+.searchnav2.searchnav {
+  margin-top: 50px;
+  padding-bottom: 0px;
+}
+
+/* line 207, ../../../Desktop/HTMLupdate/scss/main.scss */
+.searchnav2.searchnav h3 {
+  color: #161616;
+  font-size: 21px;
+  font-family: 'helvetica-m';
+  border-bottom: 1px solid #EC0157;
+  display: inline-block;
+  padding: 2px 0px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  /* line 207, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .searchnav2.searchnav h3 {
+    margin-bottom: 0px;
+  }
+}
+
+/* line 221, ../../../Desktop/HTMLupdate/scss/main.scss */
+.searchnav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #ffffffa1;
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  /* line 221, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .searchnav {
+    margin-top: -68px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 221, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .searchnav {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+/* line 233, ../../../Desktop/HTMLupdate/scss/main.scss */
+.searchnav h4 {
+  color: #001D3A;
+  font-family: 'helvetica-m';
+  font-size: 17px;
+  margin: 8px 0;
+}
+
+/* line 239, ../../../Desktop/HTMLupdate/scss/main.scss */
+.searchnav ul {
+  padding-left: 0;
+}
+
+/* line 241, ../../../Desktop/HTMLupdate/scss/main.scss */
+.searchnav ul li {
+  position: relative;
+  display: inline-block;
+  font-family: 'helvetica-m';
+  color: #001D3A;
+  padding-right: 30px;
+}
+
+/* line 247, ../../../Desktop/HTMLupdate/scss/main.scss */
+.searchnav ul li a {
+  color: #001D3A;
+}
+
+/* line 250, ../../../Desktop/HTMLupdate/scss/main.scss */
+.searchnav ul li:before {
+  position: absolute;
+  content: '';
+  background-image: url("../images/breadc.svg");
+  color: #2F75BB;
+  right: 3px;
+  top: -1px;
+  height: 29px;
+  width: 19px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* line 263, ../../../Desktop/HTMLupdate/scss/main.scss */
+.searchnav ul li:last-child:before {
+  display: none;
+}
+
+/* line 268, ../../../Desktop/HTMLupdate/scss/main.scss */
+.searchnav input {
+  border-radius: 0 !important;
+  border: 1px solid #cccccc !important;
+  height: 38px;
+  border-right: none !important;
+}
+
+/* line 275, ../../../Desktop/HTMLupdate/scss/main.scss */
+.form-control:focus {
+  box-shadow: 0 0 0 0 !important;
+}
+
+/* line 279, ../../../Desktop/HTMLupdate/scss/main.scss */
+.btnsearch {
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #e4065b 0%, #396fb6 100%, #00d4ff 100%);
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  color: #ffffff !important;
+  padding: 6px 30px !important;
+  border: 0 !important;
+}
+
+/* line 288, ../../../Desktop/HTMLupdate/scss/main.scss */
+button:focus {
+  outline: none !important;
+}
+
+@media (max-width: 576px) {
+  /* line 291, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .xs-marg-btm {
+    margin-bottom: 1rem;
+  }
+}
+
+/* line 296, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 299, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox .detailboxInner {
+  background-color: #2f75bb21;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+/* line 303, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox .detailboxInner h2 {
+  color: #161616;
+  font-size: 24px;
+  font-family: 'helvetica-m';
+}
+
+/* line 308, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox .detailboxInner p {
+  color: #161616;
+}
+
+/* line 312, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox h3 {
+  color: #161616;
+  font-size: 22px;
+  font-family: 'helvetica-m';
+  text-align: center;
+}
+
+/* line 318, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  text-align: center;
+}
+
+/* line 325, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox ul li {
+  list-style: none;
+  width: 100%;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 325, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .detailbox ul li {
+    width: 50%;
+  }
+}
+
+@media (min-width: 991px) {
+  /* line 325, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .detailbox ul li {
+    width: 25%;
+  }
+}
+
+/* line 335, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox ul li .bcontent {
+  padding: 15px;
+  box-shadow: 0px 0px 20px -12px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  transition: .2s;
+  border-bottom: 4px solid #ffffff;
+  position: relative;
+}
+
+/* line 339, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox ul li .bcontent a .imgbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+
+/* line 345, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox ul li .bcontent a p {
+  color: #161616;
+}
+
+/* line 353, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox ul li .bcontent .bottombox {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ffffff;
+  transition: .2s;
+}
+
+/* line 363, ../../../Desktop/HTMLupdate/scss/main.scss */
+.detailbox ul li .bcontent:hover .bottombox {
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #e4065b 0%, #396fb6 100%, #00d4ff 100%);
+  transition: .2s;
+}
+
+/* line 374, ../../../Desktop/HTMLupdate/scss/main.scss */
+.innerbox {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+/* line 377, ../../../Desktop/HTMLupdate/scss/main.scss */
+.innerbox .l-pic {
+  margin-bottom: 10px;
+}
+
+/* line 380, ../../../Desktop/HTMLupdate/scss/main.scss */
+.innerbox .innbox-content {
+  background-color: #2f75bb21;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  /* line 380, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .innerbox .innbox-content {
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+  }
+}
+
+/* line 388, ../../../Desktop/HTMLupdate/scss/main.scss */
+.innerbox .innbox-content h3 {
+  color: #161616;
+  font-size: 20px;
+  font-family: 'helvetica-m';
+  padding: 6px 0;
+  margin-bottom: 0;
+}
+
+/* line 396, ../../../Desktop/HTMLupdate/scss/main.scss */
+.innerbox .innbox-content .tag-btn span {
+  cursor: pointer;
+  background-color: #91afde;
+  color: #161616;
+  font-size: 14px;
+  padding: 5px 8px;
+  display: inline-block;
+  margin: 9px 0 5px 0;
+}
+
+/* line 404, ../../../Desktop/HTMLupdate/scss/main.scss */
+.innerbox .innbox-content .tag-btn span img {
+  width: 9px;
+  vertical-align: baseline;
+}
+
+/* line 409, ../../../Desktop/HTMLupdate/scss/main.scss */
+.innerbox .innbox-content .tag-btn a.btn {
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  color: #ffffff;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #e4065b 0%, #396fb6 100%, #00d4ff 100%);
+}
+
+@media (min-width: 768px) {
+  /* line 409, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .innerbox .innbox-content .tag-btn a.btn {
+    float: right;
+  }
+}
+
+/* line 424, ../../../Desktop/HTMLupdate/scss/main.scss */
+.screenshort {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px -12px rgba(0, 0, 0, 0.75);
+  padding: 40px !important;
+}
+
+@media (min-width: 768px) {
+  /* line 424, ../../../Desktop/HTMLupdate/scss/main.scss */
+  .screenshort {
+    margin-top: -50px;
+  }
+}
+
+/* line 431, ../../../Desktop/HTMLupdate/scss/main.scss */
+.screenshort .screenshort-box {
+  margin: 10px 0;
+  position: relative;
+}
+
+/* line 434, ../../../Desktop/HTMLupdate/scss/main.scss */
+.screenshort .screenshort-box img {
+  width: 100%;
+}
+
+/* line 437, ../../../Desktop/HTMLupdate/scss/main.scss */
+.screenshort .screenshort-box .layer {
+  opacity: 0;
+  transition: 0.1s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff75;
+  display: flex;
+  align-items: center;
+}
+
+/* line 450, ../../../Desktop/HTMLupdate/scss/main.scss */
+.screenshort .screenshort-box .layer h4 {
+  font-family: 'helvetica-m';
+  color: #2F75BB;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 458, ../../../Desktop/HTMLupdate/scss/main.scss */
+.screenshort .screenshort-box:hover .layer {
+  opacity: 1;
+  transition: 0.1s;
+}
+
+/* line 466, ../../../Desktop/HTMLupdate/scss/main.scss */
+.contentscrool {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+/* line 470, ../../../Desktop/HTMLupdate/scss/main.scss */
+.contentscrool::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+/* line 475, ../../../Desktop/HTMLupdate/scss/main.scss */
+.contentscrool::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+/* line 479, ../../../Desktop/HTMLupdate/scss/main.scss */
+.contentscrool::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+#description{
+  display: flex;
+    margin-block-start: 6%;
+    margin-block-end: 10px;
+    margin-inline-start: -11%;
+    margin-inline-end: 0px;
+}
