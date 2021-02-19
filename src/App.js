@@ -3,6 +3,7 @@ import axios from 'axios';
 import ReactDOM from "react-dom";
 import Home from './components/home';
 import Home2 from './components/home2';
+import Item from './components/item';
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter,Link,Switch,Route} from 'react-router-dom';
@@ -91,6 +92,12 @@ const fetchData=useCallback(async () =>{
           {/* <Home/> */}
           <Home2/>
           </Route>
+
+          <Route  path="/Item"> 
+           <Item/>
+          </Route>
+
+
           </Switch>
        
         

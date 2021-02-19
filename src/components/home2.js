@@ -6,8 +6,8 @@ export default function Home2() {
     const [solution, setSolution] = useState([])
     const [solution2, setSolution2] = useState([])
     const [solutionsArray, setSolutions] = useState([])
-    const [item,setItems]=useState('')
-    const [sol,setSol]=useState([])
+    const [item, setItems] = useState('')
+    const [sol, setSol] = useState([])
 
 
     //component did mount+component did update
@@ -53,20 +53,46 @@ export default function Home2() {
 
         , [])
 
-        function fun(item){
-            // console.log("hello")
-            setItems(item.description)
-            setSol(item.solutions)
-         
-        }
+    function fun(item) {
+        // console.log("hello")
+        setItems(item.description)
+        setSol(item.solutions)
+
+    }
     return (
+
         <div>
-           
-           
+
+            <div className="container-fluid banner">
+                <div class="container">
+                    <h1>Ingram Micro Cyber Security Vendor Line Card</h1>
+                </div>
+            </div>
+
+
+            <div className="conrainer-fluid searchnav">
+        <div className="container">
+            <div className="row">
+                <div className="col-md-6 col-sm-6 col-12 xs-marg-btm">
+                    <h4>Select the Domain you need help with</h4>
+                </div>
+                <div className="col-md-6 col-sm-6 col-12">
+                    <div className="input-group">
+                        <input type="text" class="form-control" id="" placeholder="Search" aria-describedby=""/>
+                        <div className="input-group-prepend">
+                            <button className="btnsearch input-group-text" id="inputGroupPrepend2">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
             <ul>
                 {categoriesArray.map(function (item) {
-                    
-                    return ( <li><button onClick={()=>{fun(item)}}>{item.name} </button></li> );
+
+                    return (<li key={item.id}><button onClick={() => { fun(item) }}>{item.name} </button></li>);
                 })
                 }
             </ul>
@@ -74,23 +100,7 @@ export default function Home2() {
             <p>{item}</p>
 
 
-            <Solution solutions={sol}/> 
-
-             
-            
-                
-
-
-
-           
-              
-        
-            
-            
-             
-
-
-
+            <Solution solutions={sol} />
 
 
         </div>
