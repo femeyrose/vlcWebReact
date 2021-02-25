@@ -15,9 +15,8 @@ export default function Item({ }) {
     useEffect(() => {
         let y = localStorage.getItem('solId');
         console.log({ y })
-        axios.get('http://165.22.218.254:4050/v1/secret/solutions/1').then(rsp => {
+        axios.get(`http://165.22.218.254:4050/v1/secret/solutions/${y}`).then(rsp => {
             console.log(rsp);
-
             console.log(rsp.data.info.name)
             console.log(rsp.data.info.category.name)
             setCat(rsp.data.info.category.name)

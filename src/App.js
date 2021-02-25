@@ -4,6 +4,8 @@ import ReactDOM from "react-dom";
 import Home from './components/home';
 import Home2 from './components/home2';
 import Item from './components/item';
+import Solution from './components/solution';
+import Description from './components/description';
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter,Link,Switch,Route} from 'react-router-dom';
@@ -93,10 +95,17 @@ const fetchData=useCallback(async () =>{
           <Home2/>
           </Route>
 
-          <Route  path="/Item"> 
+          <Route  path="/item"> 
            <Item/>
           </Route>
 
+          <Route  path="/solution"> 
+           <Solution/>
+          </Route>
+
+          <Route  path="/description"> 
+           <Description/>
+          </Route>
 
           </Switch>
        

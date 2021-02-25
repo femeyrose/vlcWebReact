@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import Item from './item';
+import { Redirect } from 'react-router';
 // import { Button } from 'semantic-ui-react'
 import {Link} from 'react-router-dom';
 // import Button from '@material-ui/core/Button';
@@ -28,9 +29,8 @@ export default function Solution({solutions}) {
         // <Route path = "/item" component = {Item} />
         console.log(solution.name)
         setSol2(solution.name)
-        // <Button component={Link} to="/item">
-        // Link
-        // </Button>
+       
+       
         
 
         
@@ -38,15 +38,18 @@ export default function Solution({solutions}) {
     }
 
     return(
-        
+       
+           
         
         solutions.map(solution=>(<li key={solution.name}><div className="btn-group">
             
-            <button href='item' onClick={() => { findId(solution) }} >{solution.name}</button> </div> </li> 
+            <button  onClick={() => { findId(solution) }} >  <Link to={"/item"} >{solution.name}</Link> </button> </div> </li> 
+    
             
           ))
-
          
+          /* (<Redirect to="/item"></Redirect>) */
+          
            
     )
     
